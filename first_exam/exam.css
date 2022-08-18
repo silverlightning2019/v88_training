@@ -1,0 +1,99 @@
+#header{
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    padding: 10px 70px 10px 30px;
+}
+    #header img{
+        display: inline;
+        vertical-align: middle;
+    }
+    #header h2{
+        display: inline;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+    #header ul{
+        display: inline;
+        float: right;
+    }   
+    #header li{
+        border-right: 1px solid;
+        display: inline;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+#content{
+    margin-bottom: 175px;
+    max-height: 900px;
+    padding: 20px;
+    position: relative;
+}
+    #content h1{
+        font-size: 75px;
+        margin: 0px 0px;
+        max-width: 900px;
+        vertical-align: top;
+    }
+    #content p{
+        font-size: 30px;
+        max-width: 800px;
+        vertical-align: top;
+    }
+    #content button{
+        background-color: black;
+        border-radius: 4px;
+        color: white;
+        font-size: 25px;
+        left: 650px;
+        padding: 10px;
+        position: absolute;
+        text-decoration: none;
+    }
+    #content img{
+        padding: 20px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 900px;
+        vertical-align: top;
+
+    }
+#sub_content{
+    background-color: #eaeaea;
+    display: inline-block;
+    max-height: auto;
+    max-width: 1500px;
+    padding: 10px;
+    position: relative;
+}
+    #sub_content ul{
+        padding-left: 0px;
+    }
+    #sub_content li{
+        display: inline-block;
+        list-style-type: none;
+        max-width: 400px; 
+    }
+        #sub_content li img{
+            display: inline;
+            vertical-align: middle;
+        }
+        #sub_content li h2{
+            display: inline;
+            vertical-align: middle;
+        }
+    #sub_content p{
+        max-width: 1200px; 
+    }
+#add_sub_content{
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+    #add_sub_content img{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }

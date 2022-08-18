@@ -1,0 +1,58 @@
+
+body{
+    background-color: #2fa8ec;
+    font-family: 'Raleway';
+
+    h1{
+        color: #fff;
+        font-size: 50px;
+        opacity: 0.1;
+        text-align: center;
+    }
+
+    .input_container{
+        background-color: #1784cd;
+        display: flex;
+        height: 100px;
+        position: relative;
+        width: 500px;
+
+        &.active{
+
+            input{
+                height: 20px;
+                width: 300px;
+            }
+
+            label{
+                font-size: 20px;
+                left: 10px;
+                position: absolute;
+                top: 10px;
+                transition: all .25s;
+            }
+        }
+
+        input{
+            border: none;
+            font-size: 25px;
+            font: 25px/29px "fonts";
+            height: 80px;
+            padding: 50px 10px 0px 30px;
+            outline: none;
+            width: 500px;
+        }
+    
+        label{
+            color: #6a7989;
+            font-size: 25px;
+            font-weight: bold;
+            left: 20px;
+            position: absolute;
+            top: 50px;
+            transition: all .25s;
+        }
+    }
+
+    
+}

@@ -1,0 +1,135 @@
+body{
+    background-color: #f0efee;
+    padding: auto;
+    text-align: center;
+
+    h1{
+        font-family: 'Raleway';
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        opacity: 0.1;
+    }
+
+    form{
+        display: inline-flex;
+        text-align: center;
+
+        .input_container{
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            position: relative;
+
+            &.active{
+            
+                .input_label{
+                    // left: 50px;
+                    // top: -40px;
+                    position: absolute;
+                    transition: all .25s;
+
+                    &:before{
+                        top: -10px;
+                        transition: top .25s;
+                    }
+
+                    &:after{
+                        bottom: -10px;
+                        transition: bottom .25s;
+                    }
+
+                    span{
+                        top: -36px;
+                        transition: top .25s;
+                    }
+                }
+
+                // .border_input_top{
+                //     top: -10px;
+                //     position: absolute;
+                //     transition: all .25s;
+                // }
+
+                // .border_input_bottom{
+                //     bottom: -10px;
+                //     position: absolute;
+                //     transition: all .25s;
+                // }
+            }
+
+            // .border_input_top{
+            //     background-color: #6a7989;
+            //     height: 4px;
+            //     position: absolute;
+            //     transition: all .25s;
+            //     top: 0px;
+            //     width: 82%;
+
+            // }
+
+            // .border_input_bottom{
+            //     background-color: #6a7989;
+            //     bottom: 0px;
+            //     height: 4px;
+            //     position: absolute;
+            //     transition: all .25s;
+            //     width: 82%;
+            // }
+
+            input{
+                align-items: center;
+                background-color: #f0efee;
+                border: none;
+                //border-top: 4px solid #6a7989;
+                //border-bottom: 4px solid #6a7989;
+                display: flex;
+                font-size: 30px;
+                height: 60px;
+                margin: 0px 40px;
+                outline: none;
+                transition: all .25s;
+                width: 350px;
+            }
+
+            .input_label{
+                color: #6a7989;
+                font-family: 'Raleway';
+                font-weight: bolder;
+                position: absolute;
+                top: 20px;
+                transition: all .25s;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                height: 75px;
+                &:before{
+                    content: "";
+                    background-color: #6a7989;
+                    height: 4px;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    transition: top .25s;
+                }
+                &:after{
+                    content: "";
+                    background-color: #6a7989;
+                    height: 4px;
+                    display: flex;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    transition: bottom .25s;
+                }
+
+                span{
+                    position: absolute;
+                    transition: top .25s;
+                    top: 27px;
+                }
+            }
+        }
+    }
+}

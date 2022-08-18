@@ -1,0 +1,87 @@
+body {
+  background-color: #f0efee;
+  padding: auto;
+  text-align: center;
+}
+body h1 {
+  font-family: 'Raleway';
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  opacity: 0.1;
+}
+body form {
+  display: inline-flex;
+  text-align: center;
+}
+body form .input_container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+body form .input_container.active .input_label {
+  position: absolute;
+  transition: all .25s;
+}
+body form .input_container.active .input_label:before {
+  top: -10px;
+  transition: top .25s;
+}
+body form .input_container.active .input_label:after {
+  bottom: -10px;
+  transition: bottom .25s;
+}
+body form .input_container.active .input_label span {
+  top: -36px;
+  transition: top .25s;
+}
+body form .input_container input {
+  align-items: center;
+  background-color: #f0efee;
+  border: none;
+  display: flex;
+  font-size: 30px;
+  height: 60px;
+  margin: 0px 40px;
+  outline: none;
+  transition: all .25s;
+  width: 350px;
+}
+body form .input_container .input_label {
+  color: #6a7989;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  position: absolute;
+  top: 20px;
+  transition: all .25s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+body form .input_container .input_label:before {
+  content: "";
+  background-color: #6a7989;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: top .25s;
+}
+body form .input_container .input_label:after {
+  content: "";
+  background-color: #6a7989;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: bottom .25s;
+}
+body form .input_container .input_label span {
+  position: absolute;
+  transition: top .25s;
+  top: 27px;
+}
